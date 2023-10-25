@@ -111,7 +111,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 5px;
     border-right:0;    
 }
@@ -140,7 +140,7 @@ body {
 .seleccionador > .jugador{
     box-shadow: inset 0px 0px 20px -5px rgba(222, 136, 47, 0.5);
     padding:10px;
-    border: 3px solid rgba(222, 136, 47, 0.5);
+    border: 3px solid rgba(78, 57, 86, 0.6);
     border-radius:4px;
 }
 
@@ -154,7 +154,7 @@ body {
 
 .capi>img {
     width: 6rem;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius:10px;
 }
 
@@ -169,7 +169,7 @@ body {
 
 .entrenador>img {
     width: 7.5rem;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 10px;
 }
 
@@ -195,7 +195,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    background: linear-gradient(90deg, rgba(162, 29, 101, 0) 10%, rgba(65, 31, 106, 0.8) 50%);
+    background: linear-gradient(90deg,rgba(0,0,0,0) 10%, rgba(167, 70, 188, 0.5) 50%, rgba(0, 0, 0, 0.9) 90%);
     border-top-left-radius: 22.5rem;
     border-bottom-right-radius: 22.5rem;
     border-top-right-radius: 1.875rem;
@@ -264,7 +264,7 @@ body {
     align-items: center;
     width: 100%;
     margin: 10px 0 5px 0;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 15px;
 }
 
@@ -280,7 +280,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 10px 0 5px 0;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 15px;
 }
 
@@ -297,7 +297,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 10px 0 5px 0;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 15px;
 }
 
@@ -313,7 +313,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 10px 0 5px 0;
-    border: 5px solid rgba(222, 136, 47, 0.5);
+    border: 5px solid rgba(78, 57, 86, 0.6);
     border-radius: 15px;
 }
 
@@ -407,7 +407,11 @@ body {
 
 #zer > .izq > .zer_capi > .capi{
     width:50%;
-    height:25vh;
+}
+
+#zer > .der > .nombre {
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
 }
 
 
