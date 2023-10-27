@@ -1286,6 +1286,7 @@ body {
 
     .cesiones > .minicartas{
         margin:10px 0 0 0;
+        flex-direction: row;
     }
 
     .cesiones > h1{
@@ -1294,11 +1295,6 @@ body {
 
     #ultra{
         font-size:20px;
-    }
-    
-    #zhuge{
-        width:15%;
-        height:15vh;
     }
 
 }
@@ -1311,8 +1307,4 @@ body {
         font-weight: 500;
     }
 
-    #zhuge{
-        width:15%;
-        height:15vh;
-    }
 }
