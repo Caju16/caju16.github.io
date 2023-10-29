@@ -1035,6 +1035,23 @@ body {
     border-color:rgba(255, 140, 0, 0.6);
 }
 
+#rag > .der > .info > .cesiones > .minicartas{
+    border-color:rgba(255, 140, 0, 0.6);
+}
+
+#rag > .der > .info > .cesiones > .minicartas{
+    border-color:rgba(255, 140, 0, 0.6);
+}
+
+#rag > .der > .info > .cesiones > .tit > h1{
+    display:block;
+    height:30px;
+}
+
+#rag > .der > .info > .cesiones > .tit{
+    padding:0;
+}
+
 
 
 
@@ -1178,6 +1195,24 @@ body {
 #osc > .der > .info > .equipo > *{
     border-color:rgba(255, 80, 80, 0.6);
 }
+
+#osc > .der > .info > .cesiones > .minicartas{
+    border-color:rgba(255, 80, 80, 0.6);
+}
+
+#osc > .der > .info > .cesiones > .minicartas{
+    border-color:rgba(255, 80, 80, 0.6);
+}
+
+#osc > .der > .info > .cesiones > .tit > h1{
+    display:block;
+    height:30px;
+}
+
+#osc > .der > .info > .cesiones > .tit{
+    padding:0;
+}
+
 
 
 
