@@ -17,12 +17,9 @@ body {
 }
 
 .navbar {
-  box-shadow: 0px 5px 10px 0px rgba(255, 93, 93, 0.8);
   position: fixed;
   width: 100%;
-  background: rgba(255, 93, 93, 0.8);
-  color: #000;
-  height: 50px;
+  background: linear-gradient(0deg, rgba(19,19,19,0) 0%, rgba(43,43,43,1) 100%);
   z-index: 12;
 }
 
@@ -42,9 +39,11 @@ body {
   color: white;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
+  background:rgba(19,19,19);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-shadow: inset 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
   transition: all 300ms;
+  margin:10px 0 10px 0;
 }
 
 .filtro-btn:hover {
@@ -52,27 +51,6 @@ body {
 }
 
 .todos {
-  background: purple;
-  font-size: 20px;
-}
-
-.dl {
-  background: rgb(241, 41, 41);
-  font-size: 20px;
-}
-
-.md {
-  background: rgb(99, 99, 255);
-  font-size: 20px;
-}
-
-.df {
-  background: rgb(59, 255, 59);
-  font-size: 20px;
-}
-
-.pr {
-  background: rgb(255, 255, 90);
   font-size: 20px;
 }
 
@@ -80,6 +58,7 @@ body {
 .menu-items {
   order: 2;
   display: flex;
+  align-items: center;
 }
 
 .menu-items li {
@@ -91,6 +70,7 @@ body {
 
 .buscador {
   display: flex;
+  height: 42px;
   align-items: center;
   border: 3px solid white;
   border-radius: 3px;
@@ -107,8 +87,53 @@ body {
 .buscador>form>input {
   width: 70%;
   border-radius: 7px;
-  height: 3vh;
+  height: 25px;
 }
+
+.todos{
+  font-size:20px;
+  box-shadow: inset 0px 0px 20px 5px rgba(185, 75, 248, 0.5);
+  }
+
+  .todos:hover{
+    background:rgb(159, 69, 194);
+  }
+  
+  .dl{
+  font-size:20px;
+  box-shadow: inset 0px 0px 20px 5px rgba(227, 63, 63, 0.5);
+  }
+
+  .dl:hover{
+    background:rgb(194, 69, 69);
+  }
+  
+  .md{
+  font-size:20px;
+  box-shadow: inset 0px 0px 20px 5px rgba(75, 176, 248, 0.5);
+  }
+
+  .md:hover{
+    background:rgb(69, 132, 194);
+  }
+  
+  .df{
+  font-size:20px;
+  box-shadow: inset 0px 0px 20px 5px rgba(101, 248, 75, 0.5);
+  }
+
+  .df:hover{
+    background:rgb(69, 194, 69);
+  }
+  
+  .pr{
+  font-size:20px;
+  box-shadow: inset 0px 0px 20px 5px rgba(227, 230, 62, 0.5);
+  }
+
+  .pr:hover{
+    background:rgb(254, 249, 104);
+  }
 
 
 /* FIN DE NAVBAR */
@@ -177,26 +202,6 @@ to {
   animation-fill-mode: forwards;
 } 
 
-.fuego{
-  background:rgb(185, 32, 32);
-}
-
-.viento {
-  background: rgb(61, 61, 169);
-}
-
-.bosque {
-  background: rgb(31, 155, 31);
-}
-
-.tierra {
-  background: rgb(188, 188, 23);
-}
-
-.neutro {
-  background: rgb(138, 23, 188);
-}
-
 .centrar{
   display:flex;
   flex-direction: row;
@@ -228,7 +233,7 @@ to {
 
 .fuego > .ejemplo:nth-child(3){
   background-image: linear-gradient(0deg, rgba(200, 40, 40, 0.7) 100%, rgba(159, 12, 12, 0.488) 100%), 
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/20/Royal_Heart_Shot_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e5/Royal_Heart_Shot.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -419,7 +424,7 @@ to {
 
 .fuego > .ejemplo:nth-child(30){
   background-image: linear-gradient(0deg, rgba(200, 40, 40, 0.7) 100%, rgba(159, 12, 12, 0.488) 100%), 
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/6/64/Diffuse_Chord_V3_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/28/Diffuse_Chord.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -533,7 +538,7 @@ to {
 
 .fuego > .ejemplo:nth-child(46){
   background-image: linear-gradient(0deg, rgba(200, 40, 40, 0.7) 100%, rgba(159, 12, 12, 0.488) 100%), 
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/96/Fatal_Lift_V4_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/94/Fatal_Lift.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -655,7 +660,7 @@ to {
 
 .fuego > .ejemplo:nth-child(63){
   background-image: linear-gradient(0deg, rgba(200, 40, 40, 0.7) 100%, rgba(159, 12, 12, 0.488) 100%), 
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/c1/Castle_Gate_A_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/3f/%28GX%29_Castle_Gate_A.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -877,7 +882,7 @@ to {
 
 .bosque > .ejemplo:nth-child(14){
   background-image: linear-gradient(0deg, rgba(10, 147, 26, 0.7) 100%, rgba(17, 159, 12, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/f7/Gigant_Vine_GX_in_the_Galaxy_game_%285%29.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/39/Gigant_Vine_5.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -891,7 +896,7 @@ to {
 
 .bosque > .ejemplo:nth-child(16){
   background-image: linear-gradient(0deg, rgba(10, 147, 26, 0.7) 100%, rgba(17, 159, 12, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/1a/Kami_Kabuki_Break_Galaxy_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/51/Kabuki_Break.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1129,7 +1134,7 @@ to {
 
 .bosque > .ejemplo:nth-child(50){
   background-image: linear-gradient(0deg, rgba(10, 147, 26, 0.7) 100%, rgba(17, 159, 12, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e3/Kami_Sneaking_Raid_Galaxy_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e5/Sneaking_Raid.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1470,7 +1475,7 @@ to {
 
 .viento > .ejemplo:nth-child(23){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/f5/Mermaid_Smash_%E2%88%9E_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/16/%28GX%29_Mermaid_Smash_%E2%88%9E.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1575,7 +1580,7 @@ to {
 
 .viento > .ejemplo:nth-child(38){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/fe/Ribbon_Shower_%E2%88%9E_Galaxy_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b1/Ribbon_Shower.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1624,21 +1629,21 @@ to {
 
 .viento > .ejemplo:nth-child(45){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/84/Naminori_Piero_5.png);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/57/Naminori_Pierrot_5.png);
   background-repeat: no-repeat;
   background-size:cover;
 }
 
 .viento > .ejemplo:nth-child(46){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/80/Stealth_Walk_GO_Galaxy_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/f9/%28GX%29_Stealth_Walk_GO.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
 
 .viento > .ejemplo:nth-child(47){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma/images/9/94/Kodai_no_Tsubasa_Wii_Slideshow_17.png/revision/latest/scale-to-width-down/185?cb=20130421110119&path-prefix=es);
+  url(https://i.ibb.co/KwxJvSW/Kodai-no-Tsubasa-Strikers-PNG.webp);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1666,7 +1671,7 @@ to {
 
 .viento > .ejemplo:nth-child(51){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/37/Winning_Logic_Infinite_Galaxy_game.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/78/Winning_Logic.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1806,7 +1811,7 @@ to {
 
 .viento > .ejemplo:nth-child(71){
   background-image: linear-gradient(0deg, rgba(49, 125, 217, 0.7) 100%, rgba(12, 137, 159, 0.488) 100%),  
-  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/4a/Crocodile_fang.JPG);
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e6/Crocodile_Fang.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -1840,6 +1845,688 @@ to {
 }
 
 
+/* MOUNTAIN */
+
+.tierra > .ejemplo:nth-child(1){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%), 
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/2b/The_Earth_%E2%88%9E_10.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%), 
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e0/Evolution_11.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(3){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/ff/Big_Bang_Slash_1.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(4){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b5/Great_Max_na_Ore_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(5){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/4d/Chaos_Meteor_10.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(6){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e5/Vampire_Lord_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(7){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/25/Extreme_Rabbit_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(8){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/1f/Souhi_Yuuseidan_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(9){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/5b/Heaven_Drive_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(10){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/6/6e/Ouja_no_Kiba_Kai_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(11){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/85/Disaster_Break_G2_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(12){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/75/Ballista_Shot_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(13){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/ea/Butterfly_Dream_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(14){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/f7/Shin_Odin_Sword_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(15){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/72/Dust_Javelin_2.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(16){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/91/Floral_Despair_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(17){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/33/Buttobi_Jump_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(18){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/0c/Gigaton_Head_9.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(19){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b6/Tiger_Drive_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(20){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/c3/Gold_Fever_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(21){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/11/%28CS_%28041%29%29_Denrai_Houtou_Armed.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(22){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/d/d5/Dinosaur_Break_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(23){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/77/Strike_Samba_V3_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(24){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e3/Dragon%27s_Tail_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(25){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/8e/Kyoubou_Head_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(26){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/83/Sidewinder_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(27){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/7a/Gear_Drive_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(28){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/87/Kodai_no_Kiba_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(29){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b1/Atlas_Sword_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(30){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/97/Hologram_Rock_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(31){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/79/Kuroshio_Ride_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(32){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b1/Ou_no_Tsurugi_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(33){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/08/Sky_Walk_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(34){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/7a/Dig_Through_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(35){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/46/Nobori_Ryuu_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(36){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/91/Acrobat_Keep_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(37){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/98/Desert_Drift_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(38){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/11/Claymore_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(39){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/d/da/%28GX%29_Kami_Oraora_Menchi.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(40){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/59/The_Stamp_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(41){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/bd/Boomerang_Feint_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(42){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/a/a3/Kangaroo_Kick_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(43){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/28/Gorimuchuu_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(44){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/c6/Mogura_Feint_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(45){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/4c/Phalanx_5.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(46){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/fa/Rock_Hammer_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(47){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/98/Iron_Wall_3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(48){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/7/77/Dig_Up_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(49){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/1a/Magical_Flower_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(50){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/6/6a/Skytree_Fall_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(51){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/f/fe/Atlantis_Wall_G2_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(52){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/02/Magnet_Draw_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(53){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/3a/Willy_Willy_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(54){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/c7/Okehazama_Wall_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(55){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/8a/Elephant_Press_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(56){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/d/d8/Kattobi_Defense_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(57){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/a/a3/Trace_Press_3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(58){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/0b/Viva%21_Banri_no_Choujou_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(59){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/28/Fractal_House_V2_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(60){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/92/The_Wall_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(61){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/8d/God_Hand_W_9.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(62){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/90/Shoot_Eater_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(63){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/cd/God_Hand_V_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(64){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b7/Shin_Taikoku_Ouka_9.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(65){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/23/Sand_Knock_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(66){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/ea/Capoeira_Snatch_V3_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(67){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/8b/Fence_of_Gaia_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(68){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/3d/Gigant_Wall_8.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(69){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/d/d7/Buttobi_Punch_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(70){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/1/10/Serpent_Fang_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(71){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/98/Abare_Guruma_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(72){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/41/Dokonjou_Catch.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(73){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/57/Shin_God_Hand_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.tierra > .ejemplo:nth-child(74){
+  background-image: linear-gradient(0deg, rgba(124, 129, 36, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/40/Excellent_Breast_Kai_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+
+
+
+
+
+
+/* NEUTRO */
+
+.neutro > .ejemplo:nth-child(1){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%), 
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/e/e8/Galactica_Fall.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%), 
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b4/Omega_Attack_3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(3){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/05/Zero_Magnum_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(4){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/d/d2/The_Monsters_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(5){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/44/Great_Blaster_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(6){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/9c/Shellbit_Burst_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(7){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/be/Double_Shot_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(8){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/00/Thousand_Arrow_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(9){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/4/47/Bicycle_Sword_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(10){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/82/All_Delete_3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(11){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/0e/Sprint_Warp_7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(12){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/c/c2/Decoy_Release_3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(13){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/8e/Muei_Souha_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(14){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/2/21/Vanishing_Cut_4.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(15){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/b/b4/Muei_Ranbu_2.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(16){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/8/82/Grand_Sweeper_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(17){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/6/62/Saikyousan_Shoukan_8.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(18){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/0/0e/Blitz_Bridge_9.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(19){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/38/Penguin_The_Hand_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(20){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/9/95/Rejection_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(21){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/3/34/Gravity_Point_6.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.neutro > .ejemplo:nth-child(22){
+  background-image: linear-gradient(0deg, rgba(114, 49, 217, 0.7) 100%, rgba(159, 157, 12, 0.488) 100%),  
+  url(https://static.wikia.nocookie.net/inazuma-eleven/images/5/5f/Kogetsu_Juujishou_5.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 
 
 /* FIN BODY */
@@ -1869,26 +2556,24 @@ border-radius: 10px;
 #button-up{
   width: 60px;
   height: 60px;
-background: rgb(208, 27, 27);
+  background: rgb(112, 112, 112);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 50%;
   font-size: 20px;
-position: fixed;
+  position: fixed;
   bottom: 50px;
   right: 50px;
   cursor: pointer;
   border: 4px solid transparent;
   transition: all 300ms ease;
   transform: scale(0);
-box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
 }
 
 #button-up:hover{
-  transform: scale(1.1);
-  border-color: rgba(0,0,0,0.1);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 #acel{
@@ -1914,6 +2599,10 @@ box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
     display: block;
     position: relative;
     height: 64px;
+  }
+
+  .filtro-btn {
+    margin:0;
   }
   
   .navbar{
@@ -1963,12 +2652,12 @@ box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #c63535; 
-    box-shadow: 0px 0px 10px 0px #c63535;
+    background: rgba(255, 255, 255, 0.962);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
     padding:10px;
     padding-top:15px;
     padding-bottom:15px;
-    border-radius: 100%;;
+    border-radius: 100%;
   }
   
   .navbar-container .hamburger-lines .line {
@@ -2017,7 +2706,7 @@ box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
   
   .navbar .menu-items {
     padding-top: 100px;
-    background: rgba(143, 8, 8, 0.8);
+    background: rgba(0, 0, 0, 0.962);
     height: 100vh;
     max-width: 150px;
     transform: translate(-150%);
@@ -2026,7 +2715,7 @@ box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px rgba(143, 8, 8, 0.8);
+    box-shadow: 5px 0px 10px 0px rgb(0, 0, 0);
   }
   
   .navbar .menu-items li {
