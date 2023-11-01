@@ -335,7 +335,7 @@
           height: 5px; }
       .hexagon-item:hover .hex-item div::before,
       .hexagon-item:hover .hex-item div::after {
-        background-color: #c6c36f; }
+        background-color: rgb(149, 160, 255); }
       .hexagon-item:hover .hex-content svg {
         -webkit-transform: scale(0.97);
         -moz-transform: scale(0.97);
@@ -384,7 +384,7 @@
       -o-transform-origin: center center;
       transform-origin: center center; }
       .hex-item div::before, .hex-item div::after {
-        background-color: #6872ff;
+        background-color: #ffffff;
         content: "";
         position: absolute;
         width: 100%;
@@ -559,7 +559,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0,0,0, 0.6) 100%, rgba(0,0,0,0) 0%), url(https://wallpapers.com/images/featured/universe-qs811igzbabl1m0o.jpg);
+    background: linear-gradient(rgba(0,0,0, 0.3) 100%, rgba(0,0,0,0) 0%), url(https://i.ibb.co/1GmmF6T/Sin-t-tulo-1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
